@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css";
+import Train1 from "./assets/train1.png";
+import Train1 from "./assets/train2.png";
+import Train1 from "./assets/train3.png";
 
 const Home = () => {
   return (
@@ -38,9 +41,9 @@ const Home = () => {
 
       {/* TRAIN IMAGES */}
       <div className="hero-images">
-        <img src="./Train1.jpg" alt="train1" className="train left" />
-        <img src="./Train2.jpg" alt="train2" className="train center" />
-        <img src="./Train3.jpg" alt="train3" className="train right" />
+        <img src={Train1} alt="train1" />
+        <img src={Train2} alt="train1" />
+        <img src={Train3} alt="train1" />
       </div>
     </div>
   );
