@@ -25,7 +25,7 @@ function App() {
         {/* /home route (same component) */}
         <Route path="/home" element={<Home />} />
 
-        {/* Example: If you want TrainSearch route later (uncomment import above)
+        {/* Example: If you want TrainSearch route later (uncomment import above) */}
         <Route
           path="/search"
           element={
@@ -35,7 +35,7 @@ function App() {
             />
           }
         /> 
-        */}
+       
       </Routes>
     </BrowserRouter>
   );

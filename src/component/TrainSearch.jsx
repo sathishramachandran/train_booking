@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { locations } from "../utils";
 
 const Container = styled.div`
   background-color: white;
@@ -9,17 +10,29 @@ const Container = styled.div`
   text-align: center;
 `;
 
-export default function TrainSearch() {
-  return (
-    <>
-      <Container>
-        <h2>Search for trains</h2>
-        <div className="tsearchbar">
-            <form className="">
-
-            </form>
-        </div>
-      </Container>
-    </>
-  );
+export default function TrainSearch({ searchState, setSearchState }) {
+    return (
+        <>
+            <Container>
+                <h2>Search for trains</h2>
+                <div className="tsearchbar">
+                    <form
+                        className="form-lable-tsearchbar"
+                        value={searchState.from}
+                        onChange={(e) =>
+                            setSearchState((prevState) => ({
+                                ...prevState,
+                                from: e.target.value,
+                            }))
+                        }
+                        {locations.map((data) => (
+                            <option key={`${data}-source`} value={data}>
+                                {data}
+                            </option>
+                        ))}
+                    ></form>
+                </div>
+            </Container>
+        </>
+    );
 }
