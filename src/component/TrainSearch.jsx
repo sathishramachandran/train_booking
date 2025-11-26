@@ -14,6 +14,11 @@ export default function TrainSearch() {
     <>
       <Container>
         <h2>Search for trains</h2>
+        <div className="tsearchbar">
+            <form className="">
+
+            </form>
+        </div>
       </Container>
     </>
   );
