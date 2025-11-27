@@ -1,16 +1,12 @@
-// import { useState } from "react";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./component/Header";
 import TrainSearch from "./component/TrainSearch";
 import Home from "./component/Home";
-import { locations } from "./utils";
-import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Merged from "./component/Merged";
-
+import TrainList from "./component/TrainList";
+import TrainLayout from "./component/TrainLayout";
 
 function App() {
   const [searchState, setSearchState] = useState({
@@ -19,16 +15,58 @@ function App() {
     date: "",
   });
 
+  const [selectedSeats, setSelectedSeats] = useState([]);
+
+  // Dummy Train Data (You forgot this part)
+  const dummyTrains = [
+    {
+      id: 1,
+      name: "Chennai Express",
+      source: "Chennai",
+      destination: "Bangalore",
+      departureTime: "08:30 AM",
+      price: 250,
+      trainType: "Superfast",
+      availableSeats: [1, 2, 3, 4, 5],
+      availableDates: ["2025-11-27", "2025-11-28"],
+    },
+  ];
+
   return (
     <BrowserRouter>
       <Routes>
+        {/* Home / Search Page */}
         <Route
           path="/"
           element={
             <Merged searchState={searchState} setSearchState={setSearchState} />
           }
         />
-          
+
+        {/* Only Search Component */}
+        <Route
+          path="/show"
+          element={
+            <TrainSearch
+              searchState={searchState}
+              setSearchState={setSearchState}
+            />
+          }
+        />
+
+        {/* List All Dummy Trains */}
+        <Route path="/tick" element={<TrainList trains={dummyTrains} />} />
+
+        {/* Train Seat Layout / Booking Page */}
+        <Route
+          path="/train/:id"
+          element={
+            <TrainLayout
+              selectedSeats={selectedSeats}
+              setSelectedSeats={setSelectedSeats}
+            />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

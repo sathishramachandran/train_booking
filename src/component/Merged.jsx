@@ -166,6 +166,7 @@ const Merged = ({ searchState, setSearchState }) => {
                   <strong>Type:</strong> {train.TrainType}
                 </p>
               </div>
+             
             ))}
           </div>
         )}
