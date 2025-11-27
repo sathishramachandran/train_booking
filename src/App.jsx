@@ -17,9 +17,7 @@ function App() {
 
   const [selectedSeats, setSelectedSeats] = useState([]);
 
-<<<<<<< HEAD
-=======
-  // ✅ Dummy Train Data Added Here
+  // Dummy train data
   const dummyTrains = [
     {
       id: 1,
@@ -45,7 +43,6 @@ function App() {
     }
   ];
 
->>>>>>> 30861cb795f59e04c8a1bb0d0f72cec7bc17b532
   return (
     <BrowserRouter>
       <Routes>
