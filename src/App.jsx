@@ -1,34 +1,68 @@
-import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { useState } from "react";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+<<<<<<< HEAD
 import Header from "./component/Header";
 import TrainSearch from "./component/TrainSearch";
 import Home from "./component/Home";
 import { locations } from "./utils";
 // import Merged from "./component/Merged";
 
+=======
+// import Header from "./component/Header";
+// import TrainSearch from "./component/TrainSearch";
+// import Home from "./component/Home";
+// import { locations } from "./utils";
+
+// function App() {
+//   const [searchState, setSearchState] = useState({
+//     from: locations[0],
+//     to: locations[2],
+//     date: "",
+//   });
+
+//   return (
+//     <BrowserRouter>
+
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+
+//         <Route
+//           path="/search"
+//           element={
+//             <TrainSearch
+//               searchState={searchState}
+//               setSearchState={setSearchState}
+//             />
+//           }
+//         />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Merged from "./component/Merged";
+>>>>>>> ef1740ed5a6ea40cdf4b03d06309ffa9da57b395
 
 function App() {
   const [searchState, setSearchState] = useState({
-    from: locations[0],
-    to: locations[2],
+    from: "",
+    to: "",
     date: "",
   });
 
   return (
     <BrowserRouter>
-    
-
       <Routes>
-        <Route path="/" element={<Home />} />
-
         <Route
-          path="/search"
+          path="/"
           element={
-            <TrainSearch
-              searchState={searchState}
-              setSearchState={setSearchState}
-            />
+            <Merged searchState={searchState} setSearchState={setSearchState} />
           }
         />
           
