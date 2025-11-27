@@ -5,6 +5,8 @@ import Header from "./component/Header";
 import TrainSearch from "./component/TrainSearch";
 import Home from "./component/Home";
 import { locations } from "./utils";
+// import Merged from "./component/Merged";
+
 
 function App() {
   const [searchState, setSearchState] = useState({
@@ -29,6 +31,7 @@ function App() {
             />
           }
         />
+          
       </Routes>
     </BrowserRouter>
   );
