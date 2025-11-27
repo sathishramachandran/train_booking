@@ -10,6 +10,7 @@ const Home = () => {
     e.preventDefault();
     setShowSignin(false);
   }
+  <h1>hii da </h1>;
 
   const routes = [
     { from: "Kathmandu", hrs: "10 Hrs", to: "Pyuthan", price: "Rs. 1600" },

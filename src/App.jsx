@@ -17,6 +17,35 @@ function App() {
 
   const [selectedSeats, setSelectedSeats] = useState([]);
 
+<<<<<<< HEAD
+=======
+  // ✅ Dummy Train Data Added Here
+  const dummyTrains = [
+    {
+      id: 1,
+      name: "Chennai Express",
+      source: "Chennai",
+      destination: "Bangalore",
+      departureTime: "08:30 AM",
+      price: 250,
+      trainType: "Superfast",
+      availableSeats: [1, 2, 3, 4, 5],
+      availableDates: ["2025-11-27", "2025-11-28"],
+    },
+    {
+      id: 2,
+      name: "Bangalore Mail",
+      source: "Bangalore",
+      destination: "Chennai",
+      departureTime: "06:00 PM",
+      price: 300,
+      trainType: "Express",
+      availableSeats: [1, 2, 3],
+      availableDates: ["2025-11-27", "2025-11-29"],
+    }
+  ];
+
+>>>>>>> 30861cb795f59e04c8a1bb0d0f72cec7bc17b532
   return (
     <BrowserRouter>
       <Routes>
