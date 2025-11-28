@@ -68,17 +68,13 @@ video {
   }
 }
 
-/* -------------------------
-HOME CONTAINER
----------------------------- */
+
 .home-container {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* -------------------------
-VIDEO SECTION
----------------------------- */
+
 .video-wrapper {
   width: 100%;
   height: 300px;
@@ -91,9 +87,7 @@ VIDEO SECTION
   object-fit: cover;
 }
 
-/* -------------------------
-SEARCH SECTION
----------------------------- */
+
 .search-page {
   width: 100%;
   max-width: 1200px;

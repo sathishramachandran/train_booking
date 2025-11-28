@@ -9,9 +9,6 @@ import TrainList from "./component/TrainList";
 import SeatSelection from "./component/SeatSelection";
 import BookingForm from "./component/BookingForm";
 
-// -----------------------------
-// FINAL DUMMY TRAIN DATA
-// -----------------------------
 const dummyTrains = [
   {
     id: 1,

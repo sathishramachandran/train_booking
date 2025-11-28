@@ -26,14 +26,14 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* Running Train Video */}
+
       <div className="video-wrapper">
         <video autoPlay muted loop className="hero-video">
           <source src="/src/assets/trainviedo.mp4" type="video/mp4" />
         </video>
       </div>
 
-      {/* Search Box */}
+
       <div className="search-page">
         <h2 className="search-title">Search Trains</h2>
 
