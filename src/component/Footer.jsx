@@ -23,10 +23,10 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Customer Support</h3>
           <p>
-            <strong>Phone:</strong> 1800-111-139
+            <strong>Phone:</strong> 9488909434
           </p>
           <p>
-            <strong>Email:</strong> support@traintickets.in
+            <strong>Email:</strong> sathishramu1999@gmail.com
           </p>
           <p>
             <strong>Timings:</strong> 10 AM – 6 PM (Mon–Sat)
