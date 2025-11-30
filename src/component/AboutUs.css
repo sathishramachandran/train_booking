@@ -1,0 +1,54 @@
+.about-container {
+  width: 90%;
+  margin: 30px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-section {
+  background: #ffffff;
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 1px solid #dfe7f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2,
+.about-section h3 {
+  color: #213d77;
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* FEATURES & WHY CHOOSE US LIST */
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  font-size: 15px;
+  color: #444;
+  margin: 6px 0;
+}
+
+/* STEPS GRID */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.step-card {
+  background: #ff9933;
+  color: #213d77;
+  padding: 14px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}

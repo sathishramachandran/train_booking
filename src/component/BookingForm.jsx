@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./BookingForm.css";
 
 export default function BookingForm() {
   const location = useLocation();
+  const navigate = useNavigate();
+
   const { train, seats } = location.state || {};
 
-  if (!train) return <h2>No Train Selected</h2>;
+  if (!train) return <h2 className="no-train-text">No Train Selected</h2>;
 
-  // Create dynamic passenger list
+  // Dynamic passenger fields
   const [passengers, setPassengers] = useState(
     seats.map(() => ({
       name: "",
@@ -18,12 +20,14 @@ export default function BookingForm() {
     }))
   );
 
+  // Input handler
   const handleChange = (index, field, value) => {
     const updated = [...passengers];
     updated[index][field] = value;
     setPassengers(updated);
   };
 
+  // On booking confirmation
   const handleSubmit = () => {
     // Validate all passengers
     for (let i = 0; i < passengers.length; i++) {
@@ -34,16 +38,34 @@ export default function BookingForm() {
       }
     }
 
-    alert(
-      `Booking Successful!\nTrain: ${train.name}\nSeats: ${seats.join(", ")}`
-    );
+    // Create booking object
+    const newBooking = {
+      id: Date.now(),
+      trainName: train.name,
+      trainNumber: train.number,
+      from: train.from,
+      to: train.to,
+      date: new Date().toLocaleDateString(),
+      seats: seats,
+      passengers: passengers,
+      totalFare: seats.length * 250,
+    };
 
-    console.table(passengers);
+    // Save booking in localStorage
+    const existing = JSON.parse(localStorage.getItem("bookings")) || [];
+    const updatedBookings = [...existing, newBooking];
+
+    localStorage.setItem("bookings", JSON.stringify(updatedBookings));
+
+    alert("Booking Successful!");
+
+    // Redirect to Booking History
+    navigate("/booking");
   };
 
   return (
     <div className="booking-page">
-      {/* LEFT SIDE: Dynamic Passenger Form */}
+      {/* LEFT SECTION - PASSENGERS */}
       <div className="booking-form">
         <h2 className="section-title">Passenger Details</h2>
 
@@ -101,7 +123,7 @@ export default function BookingForm() {
         </button>
       </div>
 
-      {/* RIGHT SIDE: Summary */}
+      {/* RIGHT SECTION - SUMMARY */}
       <div className="summary-section">
         <div className="summary-card">
           <h3>Journey Summary</h3>
@@ -124,7 +146,7 @@ export default function BookingForm() {
 
         <div className="fare-card">
           <h3>Total Fare</h3>
-          <p>₹250 x {seats.length}</p>
+          <p>₹250 × {seats.length}</p>
           <h4>₹{seats.length * 250}</h4>
         </div>
       </div>

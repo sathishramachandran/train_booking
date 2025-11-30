@@ -1,21 +1,67 @@
-.irctc-footer{
-  background:#213d77;
-  color:white;
-  padding:20px;
+.footer {
+  background: #213d77;
+  color: white;
+  padding: 40px 0 10px 0;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
 }
-.footer-top{
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
+
+/* FOOTER GRID */
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
-.footer-bottom{
-  text-align:center;
-  margin-top:10px;
-  opacity:0.8;
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #ffcc66;
 }
-.ul-footer  {
+
+.footer-section a {
+  display: block;
+  color: #e6e6e6;
+  font-size: 14px;
+  margin: 6px 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
   display: flex;
-  width: 260px;
-  justify-content: space-evenly;
- 
+  gap: 12px;
+}
+
+.social-icons a {
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.3);
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #dcdcdc;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }

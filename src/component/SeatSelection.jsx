@@ -50,9 +50,7 @@ export default function SeatSelection({ trains }) {
 
       <button
         className="confirm-btn"
-        onClick={() =>
-          navigate("/booking", { state: { train, seats: selected } })
-        }
+        onClick={() => navigate("/book", { state: { train, seats: selected } })}
       >
         Proceed to Book
       </button>

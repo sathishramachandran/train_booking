@@ -1,0 +1,158 @@
+/* Train Showcase (cards) */
+.showcase-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.showcase-title {
+  font-size: 28px;
+  color: #213d77;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* grid */
+.train-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* card */
+.train-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #dfe7f5;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.train-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* image */
+.train-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* body */
+.train-card-body {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.train-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.train-name {
+  font-size: 18px;
+  color: #213d77;
+  margin: 0;
+}
+
+.train-number {
+  background: #ff9933;
+  color: #213d77;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.train-route {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}
+
+.train-desc {
+  color: #666;
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* dropdowns row */
+.card-dropdowns {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.form-group.small {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 6.66px);
+}
+
+.form-group.small label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #213d77;
+  margin-bottom: 6px;
+}
+
+.form-group.small select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d9e6;
+  font-size: 14px;
+  background: white;
+}
+
+/* actions */
+.card-actions {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-btn {
+  background: #213d77;
+  color: #fff;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+  .form-group.small {
+    width: 48%;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-dropdowns {
+    flex-direction: column;
+  }
+  .form-group.small {
+    width: 100%;
+  }
+  .card-actions {
+    justify-content: stretch;
+  }
+  .card-btn {
+    width: 100%;
+  }
+}
