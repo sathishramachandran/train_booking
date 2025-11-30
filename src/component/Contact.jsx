@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="contact-card">
           <h3>📞 Customer Care</h3>
           <p>
-            <strong>Phone:</strong> 1800-111-139
+            <strong>Phone:</strong> 7397488588,9488909434
           </p>
           <p>
             <strong>Working Hours:</strong> 24×7 Support
@@ -22,35 +22,18 @@ export default function Contact() {
         <div className="contact-card">
           <h3>📩 Email Support</h3>
           <p>
-            <strong>Email:</strong> support@traintickets.in
+            <strong>Email:</strong> sathishramu1999@gmail.com,
+            sankeerthan2005@gmail.com
           </p>
+          <br></br>
           <p>Expected Response Time: 24–48 hours</p>
         </div>
 
         <div className="contact-card">
           <h3>💬 Online Complaints</h3>
-          <p>
-            For complaints regarding ticketing, payments, refunds or delays,
-            submit a request through our support system.
-          </p>
+          <p></p>
           <button className="complaint-btn">Submit Complaint</button>
         </div>
-      </div>
-
-      {/* Railway Office Section */}
-      <div className="railway-office">
-        <h3>Nearest Railway Zone Offices</h3>
-        <ul>
-          <li>
-            <strong>Southern Railway (Chennai):</strong> Park Town, Chennai
-          </li>
-          <li>
-            <strong>South Western Railway (Bangalore):</strong> Hubli HQ
-          </li>
-          <li>
-            <strong>South Central Railway (Hyderabad):</strong> Secunderabad HQ
-          </li>
-        </ul>
       </div>
 
       {/* Contact Form */}

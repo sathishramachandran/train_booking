@@ -23,31 +23,15 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Customer Support</h3>
           <p>
-            <strong>Phone:</strong> 9488909434
+            <strong>Phone:</strong> 9488909434, 7397488588
           </p>
           <p>
-            <strong>Email:</strong> sathishramu1999@gmail.com
+            <strong>Email:</strong> sathishramu1999@gmail.com,
+            sankeerthan2005@gmail.com
           </p>
           <p>
             <strong>Timings:</strong> 10 AM – 6 PM (Mon–Sat)
           </p>
-        </div>
-
-        {/* COLUMN 3 */}
-        <div className="footer-section">
-          <h3>Useful Links</h3>
-          <a href="https://www.irctc.co.in" target="_blank">
-            IRCTC Official Website
-          </a>
-          <a href="https://www.indianrail.gov.in" target="_blank">
-            Indian Railways
-          </a>
-          <a href="https://www.raildrishti.in" target="_blank">
-            Rail Drishti
-          </a>
-          <a href="https://enquiry.indianrail.gov.in" target="_blank">
-            Train Enquiry
-          </a>
         </div>
 
         {/* COLUMN 4 */}
@@ -72,7 +56,8 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Train Ticket Booking. All Rights Reserved.
+        © {new Date().getFullYear()} Train Ticket Booking.Developed by Sathish,
+        Sankeerthan
       </div>
     </footer>
   );

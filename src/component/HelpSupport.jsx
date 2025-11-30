@@ -87,24 +87,15 @@ export default function HelpSupport() {
       <div className="contact-support">
         <h3>Contact Support</h3>
         <p>
-          <strong>Email:</strong> sathishramu1999@gmail.com
+          <strong>Email:</strong> sathishramu1999@gmail.com,
+          sankeerthan2005@gmail.com
         </p>
         <p>
-          <strong>Phone:</strong> 9488909434
+          <strong>Phone:</strong> 9488909434, 7397488588
         </p>
         <p>
           <strong>Working Hours:</strong> 10 AM – 6 PM (Mon – Sat)
         </p>
-      </div>
-
-      {/* SAFETY SECTION */}
-      <div className="safety-section">
-        <h3>Safety Guidelines</h3>
-        <ul>
-          <li>Do not share OTP or payment details with anyone.</li>
-          <li>Use official payment methods only.</li>
-          <li>Keep your booking ID safe for future reference.</li>
-        </ul>
       </div>
     </div>
   );
