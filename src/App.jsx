@@ -101,19 +101,19 @@ function App() {
         <Route path="/trains" element={<TrainList trains={dummyTrains} />} />
 
         {/* BOOKING HISTORY */}
-        <Route path="./booking" element={<BookingHistory />} />
-        <Route path="./about" element={<AboutUs />} />
-        <Route path="./help" element={<HelpSupport />} />
-        <Route path="./contact" element={<Contact />} />
+        <Route path="/booking" element={<BookingHistory />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/help" element={<HelpSupport />} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* SEAT SELECTION */}
         <Route
-          path="./train/:id/seats"
+          path="/train/:id/seats"
           element={<SeatSelection trains={dummyTrains} />}
         />
 
         {/* BOOKING FORM */}
-        <Route path="./book" element={<BookingForm />} />
+        <Route path="/book" element={<BookingForm />} />
       </Routes>
 
       <Footer />
