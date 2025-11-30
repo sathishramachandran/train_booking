@@ -87,10 +87,10 @@ export default function HelpSupport() {
       <div className="contact-support">
         <h3>Contact Support</h3>
         <p>
-          <strong>Email:</strong> support@traintickets.in
+          <strong>Email:</strong> sathishramu1999@gmail.com
         </p>
         <p>
-          <strong>Phone:</strong> 1800-123-456
+          <strong>Phone:</strong> 9488909434
         </p>
         <p>
           <strong>Working Hours:</strong> 10 AM – 6 PM (Mon – Sat)
