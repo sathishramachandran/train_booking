@@ -58,7 +58,7 @@ const dummyTrains = [
 
   {
     id: 4,
-    name: "Chennai – Hyderabad SF",
+    name: "Chennai - Hyderabad SF",
     number: "12759",
     from: "Chennai",
     to: "Hyderabad",
@@ -73,7 +73,7 @@ const dummyTrains = [
 
   {
     id: 5,
-    name: "Bangalore – Hyderabad Express",
+    name: "Bangalore - Hyderabad Express",
     number: "17030",
     from: "Bangalore",
     to: "Hyderabad",
