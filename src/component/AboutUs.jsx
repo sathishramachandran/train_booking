@@ -3,96 +3,62 @@ import "./AboutUs.css";
 
 export default function AboutUs() {
   return (
-    <div className="about-container">
-      <section className="about-section intro">
-        <h2>About Our Train Ticket Booking System</h2>
-        <p>
-          Welcome to our Train Ticket Booking System — a fast, reliable, and
-          user-friendly platform built to simplify your railway journey. We
-          offer seamless ticket booking, real-time seat availability, and a
-          smooth booking experience inspired by the Official IRCTC service.
+    <div className="about-wrapper fade-in">
+      {/* ---------------- LEFT SIDE CONTENT ---------------- */}
+      <div className="about-left">
+        <p className="about-subtitle">How It Started</p>
+
+        <h2 className="about-title">
+          Our Mission Is To
+          <br />
+          Transform Railway Booking
+        </h2>
+
+        <p className="about-desc">
+          Our Train Booking System was created to provide a fast, simple, and
+          modern digital alternative to traditional ticket booking. Inspired by
+          IRCTC's ecosystem, our platform is built to make travel planning
+          easier, faster, and more reliable.
+          <br />
+          <br />
+          We focus on clean UI, smooth performance, real-time seat availability,
+          and effortless booking with complete transparency.
         </p>
-      </section>
+      </div>
 
-      <section className="about-section features">
-        <h3>Key Features</h3>
-        <ul>
-          <li>Fast and Secure Booking</li>
-          <li>Real-time Seat Availability</li>
-          <li>Multiple Train Options</li>
-          <li>Digital Passenger Management</li>
-          <li>Booking History & Ticket Records</li>
-          <li>Clean, Easy-to-Use Interface</li>
-        </ul>
-      </section>
-
-      <section className="about-section mission">
-        <h3>Our Mission</h3>
-        <p>
-          Our mission is to provide a railway booking system that is simple,
-          efficient, and accessible to everyone. We aim to eliminate long queues
-          and complex steps by providing a digital-first railway reservation
-          solution.
-        </p>
-      </section>
-
-      <section className="about-section vision">
-        <h3>Our Vision</h3>
-        <p>
-          To become a modern, technology-driven railway booking platform that
-          offers a smooth, safe, and hassle-free travel experience.
-        </p>
-      </section>
-
-      <section className="about-section flow">
-        <h3>How It Works</h3>
-        <div className="steps-grid">
-          <div className="step-card">1️⃣ Search Trains</div>
-          <div className="step-card">2️⃣ Select Seats</div>
-          <div className="step-card">3️⃣ Enter Passenger Details</div>
-          <div className="step-card">4️⃣ Download / View Ticket</div>
+      {/* ---------------- RIGHT SECTION ---------------- */}
+      <div className="about-right">
+        {/* IMAGE */}
+        <div className="about-image-box">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/047/785/476/non_2x/an-illustration-of-a-diverse-group-of-people-collaborating-on-a-project-around-a-table-they-are-using-laptops-and-writing-materials-free-vector.jpg"
+            alt="Team Working"
+          />
         </div>
-      </section>
 
-      <section className="about-section choose">
-        <h3>Why Choose Us?</h3>
-        <ul>
-          <li>24×7 Booking Access</li>
-          <li>No Hidden Charges</li>
-          <li>Transparent Seat Availability</li>
-          <li>Lightning Fast Search</li>
-          <li>Mobile Friendly Interface</li>
-        </ul>
-      </section>
+        {/* STATISTICS GRID */}
+        <div className="stats-grid">
+          <div className="stat-card">
+            <h3>5+</h3>
+            <p>Years Experience</p>
+          </div>
 
-      <section className="about-section safety">
-        <h3>Safety & Security</h3>
-        <p>
-          We follow digital safety protocols and ensure your data is securely
-          stored. Book your train journey with confidence — your privacy is our
-          priority.
-        </p>
-      </section>
+          <div className="stat-card">
+            <h3>10+</h3>
+            <p>Trains Added</p>
+          </div>
 
-      <section className="about-section team">
-        <h3>Our Team</h3>
-        <p>
-          <strong>Developer:</strong> Sathish
-        </p>
-        <p>
-          <strong>Collaborator:</strong> Sankeerthan
-        </p>
-        <p>
-          <strong>Project Type:</strong> Mini Project
-        </p>
-      </section>
+          <div className="stat-card">
+            <h3>200+</h3>
+            <p>Successful Bookings</p>
+          </div>
 
-      <section className="about-section contact">
-        <h3>Need Help?</h3>
-        <p>
-          Visit our <strong>Help & Support</strong> page for more information.
-        </p>
-      </section>
+          <div className="stat-card">
+            <h3>4.9⭐</h3>
+            <p>User Satisfaction</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

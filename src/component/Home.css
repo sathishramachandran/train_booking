@@ -19,6 +19,78 @@ video {
   display: block;
 }
 
+/* ---------------- GALLERY SECTION (UPDATED) ---------------- */
+.gallery-section {
+  width: 90%;
+  margin: 40px auto;
+  font-family: Poppins;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 26px;
+  color: #213d77;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Responsive, auto-fit grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Gallery Card */
+.gallery-card {
+  background: #ffffff;
+  border: 1px solid #dfe7f5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Text under image */
+.gallery-card h4 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #213d77;
+}
+
+.gallery-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 15px 16px;
+  line-height: 1.4;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- COMMON CONTAINERS ---------------- */
 .container,
 .nav-container,
 .home-container,
@@ -59,6 +131,7 @@ video {
   }
 }
 
+/* ---------------- VIDEO SECTION ---------------- */
 .home-container {
   width: 100%;
   overflow-x: hidden;
@@ -76,6 +149,7 @@ video {
   object-fit: cover;
 }
 
+/* ---------------- SEARCH SECTION ---------------- */
 .search-page {
   width: 100%;
   max-width: 1200px;
@@ -127,6 +201,8 @@ video {
   cursor: pointer;
   font-weight: 700;
 }
+
+/* ---------------- TOP TRAINS SECTION ---------------- */
 .top-trains-section {
   width: 90%;
   margin: 40px auto;
@@ -181,6 +257,7 @@ video {
   margin: 4px 0;
 }
 
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 900px) {
   .search-box {
     grid-template-columns: repeat(2, 1fr);

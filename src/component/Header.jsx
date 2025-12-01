@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import "../assets/train_logo.webp";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Header() {
         <div className="nav-container">
           <div className="logo-section">
             <img
-              src="https://t3.ftcdn.net/jpg/04/32/54/24/360_F_432542454_kfzQHjWPgdi4sx9EfXqOLPzSXFiJBf8l.jpg"
+              src="./train_logo.webp"
               alt="IRCTC Logo"
               className="irctc-logo"
             />
