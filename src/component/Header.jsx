@@ -10,7 +10,6 @@ export default function Header() {
     <>
       <header className="irctc-header">
         <div className="nav-container">
-          {/* Logo */}
           <div className="logo-section">
             <img
               src="https://t3.ftcdn.net/jpg/04/32/54/24/360_F_432542454_kfzQHjWPgdi4sx9EfXqOLPzSXFiJBf8l.jpg"
@@ -20,7 +19,6 @@ export default function Header() {
             <h2 className="app-title">Train Ticket Booking</h2>
           </div>
 
-          {/* Desktop Menu */}
           <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
             <a href="/">Home</a>
             <a href="/about">About Us</a>
@@ -30,7 +28,6 @@ export default function Header() {
             <a href="/contact">Contact</a>
           </nav>
 
-          {/* Login + Register */}
           <div className="auth-buttons">
             <button
               className="login-btn"
@@ -52,14 +49,12 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             ☰
           </div>
         </div>
       </header>
 
-      {/* MODAL LOGIN/REGISTER */}
       {showModal && (
         <div className="auth-modal-overlay" onClick={() => setShowModal(false)}>
           <div className="auth-modal" onClick={(e) => e.stopPropagation()}>

@@ -12,7 +12,6 @@
   margin-bottom: 25px;
 }
 
-/* GRID BOXES */
 .help-box-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -44,7 +43,6 @@
   font-size: 14px;
 }
 
-/* FAQ SECTION */
 .faq-section {
   background: #ffffff;
   padding: 20px;
@@ -73,7 +71,6 @@
   font-size: 14px;
 }
 
-/* CONTACT SECTION */
 .contact-support {
   background: #ffffff;
   padding: 20px;
@@ -92,7 +89,6 @@
   margin: 5px 0;
 }
 
-/* SAFETY */
 .safety-section {
   background: #ffffff;
   padding: 20px;

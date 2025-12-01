@@ -19,12 +19,10 @@
   padding: 20px;
 }
 
-/* Table Wrapper */
 .table-wrapper {
   overflow-x: auto;
 }
 
-/* Table */
 .booking-table {
   width: 100%;
   border-collapse: collapse;
@@ -34,7 +32,6 @@
   border: 1px solid #d1d9e6;
 }
 
-/* Headers */
 .booking-table thead {
   background: #213d77;
   color: white;
@@ -47,7 +44,6 @@
   text-align: left;
 }
 
-/* Body Rows */
 .booking-table td {
   padding: 14px;
   border-bottom: 1px solid #e4e9f2;
@@ -56,7 +52,6 @@
   text-align: left;
 }
 
-/* Alternating Rows */
 .booking-table tr:nth-child(even) {
   background: #f7f9fc;
 }
@@ -65,7 +60,6 @@
   background: #eef3ff;
 }
 
-/* -------- MOBILE RESPONSIVE FIX -------- */
 @media (max-width: 800px) {
   .booking-table {
     border: none;
@@ -100,7 +94,6 @@
     text-align: left;
   }
 
-  /* Ensure passenger details align left */
   .booking-table td div {
     text-align: left !important;
   }

@@ -13,8 +13,7 @@ export default function TrainLayout({ selectedSeats, setSelectedSeats }) {
   const isSleeper = selectedTrain.TrainType === "Sleeper";
   const seatWidth = isSleeper ? "80px" : "25px";
 
-  const isSeatAvailable = (seat) =>
-    selectedTrain.availableSeats.includes(seat);
+  const isSeatAvailable = (seat) => selectedTrain.availableSeats.includes(seat);
 
   const isSeatSelected = (seat) =>
     Array.isArray(selectedSeats) && selectedSeats.includes(seat);
@@ -64,7 +63,6 @@ export default function TrainLayout({ selectedSeats, setSelectedSeats }) {
       )
     );
 
-  // ⭐ TOTAL PRICE CALCULATION ⭐
   const totalPrice = selectedSeats.length * selectedTrain.price;
 
   return (
@@ -76,12 +74,9 @@ export default function TrainLayout({ selectedSeats, setSelectedSeats }) {
       <h4>Price per seat: ₹{selectedTrain.price}</h4>
 
       {selectedSeats.length > 0 && (
-        <h3 style={{ color: "green" }}>
-          Total Price: ₹{totalPrice}
-        </h3>
+        <h3 style={{ color: "green" }}>Total Price: ₹{totalPrice}</h3>
       )}
 
-      {/* Seat Layout */}
       <div className="disp flex" style={{ gap: "40px", marginTop: "20px" }}>
         {isSleeper ? (
           <>
@@ -116,12 +111,14 @@ export default function TrainLayout({ selectedSeats, setSelectedSeats }) {
 
       <div style={{ marginTop: "20px" }}>
         <button
-          onClick={() => navigate("/train/book", {
-            state: {
-              totalPrice,
-              pricePerSeat: selectedTrain.price
-            }
-          })}
+          onClick={() =>
+            navigate("/train/book", {
+              state: {
+                totalPrice,
+                pricePerSeat: selectedTrain.price,
+              },
+            })
+          }
           disabled={selectedSeats.length === 0}
         >
           Book Now

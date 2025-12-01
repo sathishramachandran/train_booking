@@ -1,4 +1,3 @@
-/* --- PAGE WRAPPER --- */
 .search-page {
   width: 90%;
   margin: 20px auto;
@@ -13,20 +12,18 @@
   margin-bottom: 20px;
 }
 
-/* --- IRCTC SEARCH BOX --- */
 .search-box {
   background: #ffffff;
   border-radius: 12px;
   padding: 25px;
   border: 1px solid #dfe7f5;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* FORM GROUP */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -53,7 +50,6 @@
   border-color: #213d77;
 }
 
-/* --- SEARCH BUTTON --- */
 .search-btn {
   grid-column: span 2;
   background: #ff9933;
@@ -72,7 +68,6 @@
   background: #ffb366;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .search-box {
     grid-template-columns: 1fr;

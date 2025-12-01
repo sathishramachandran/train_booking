@@ -10,7 +10,6 @@ export default function BookingForm() {
 
   if (!train) return <h2 className="no-train-text">No Train Selected</h2>;
 
-  // Dynamic passenger fields
   const [passengers, setPassengers] = useState(
     seats.map(() => ({
       name: "",
@@ -20,16 +19,13 @@ export default function BookingForm() {
     }))
   );
 
-  // Input handler
   const handleChange = (index, field, value) => {
     const updated = [...passengers];
     updated[index][field] = value;
     setPassengers(updated);
   };
 
-  // On booking confirmation
   const handleSubmit = () => {
-    // Validate all passengers
     for (let i = 0; i < passengers.length; i++) {
       const p = passengers[i];
       if (!p.name || !p.age || !p.phone) {
@@ -38,7 +34,6 @@ export default function BookingForm() {
       }
     }
 
-    // Create booking object
     const newBooking = {
       id: Date.now(),
       trainName: train.name,
@@ -51,7 +46,6 @@ export default function BookingForm() {
       totalFare: seats.length * 250,
     };
 
-    // Save booking in localStorage
     const existing = JSON.parse(localStorage.getItem("bookings")) || [];
     const updatedBookings = [...existing, newBooking];
 
@@ -59,13 +53,11 @@ export default function BookingForm() {
 
     alert("Booking Successful!");
 
-    // Redirect to Booking History
     navigate("/booking");
   };
 
   return (
     <div className="booking-page">
-      {/* LEFT SECTION - PASSENGERS */}
       <div className="booking-form">
         <h2 className="section-title">Passenger Details</h2>
 
@@ -123,7 +115,6 @@ export default function BookingForm() {
         </button>
       </div>
 
-      {/* RIGHT SECTION - SUMMARY */}
       <div className="summary-section">
         <div className="summary-card">
           <h3>Journey Summary</h3>

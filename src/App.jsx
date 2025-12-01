@@ -13,7 +13,6 @@ import AboutUs from "./component/AboutUs";
 import HelpSupport from "./component/HelpSupport";
 import Contact from "./component/Contact";
 
-// ---------- UPDATED DUMMY TRAINS WITH IMAGES ----------
 const dummyTrains = [
   {
     id: 1,
@@ -94,25 +93,20 @@ function App() {
       <Header />
 
       <Routes>
-        {/* HOME PAGE */}
         <Route path="/" element={<Home trains={dummyTrains} />} />
 
-        {/* TRAIN LIST PAGE */}
         <Route path="/trains" element={<TrainList trains={dummyTrains} />} />
 
-        {/* BOOKING HISTORY */}
         <Route path="/booking" element={<BookingHistory />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/help" element={<HelpSupport />} />
         <Route path="/contact" element={<Contact />} />
 
-        {/* SEAT SELECTION */}
         <Route
           path="/train/:id/seats"
           element={<SeatSelection trains={dummyTrains} />}
         />
 
-        {/* BOOKING FORM */}
         <Route path="/book" element={<BookingForm />} />
       </Routes>
 

@@ -9,7 +9,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* COLUMN 1 */}
         <div className="footer-section">
           <h3>Quick Links</h3>
           <a href="/">Home</a>
@@ -19,7 +18,6 @@ export default function Footer() {
           <a href="/contact">Contact</a>
         </div>
 
-        {/* COLUMN 2 */}
         <div className="footer-section">
           <h3>Customer Support</h3>
           <p>
@@ -34,7 +32,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* COLUMN 4 */}
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -54,7 +51,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* COPYRIGHT */}
       <div className="footer-bottom">
         © {new Date().getFullYear()} Train Ticket Booking.Developed by Sathish,
         Sankeerthan

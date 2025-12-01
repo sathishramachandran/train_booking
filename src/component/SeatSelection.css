@@ -1,6 +1,3 @@
-/* -------------------------
-SEAT SELECTION PAGE
----------------------------- */
 .seat-page {
   width: 100%;
   max-width: 1200px;
@@ -15,7 +12,6 @@ SEAT SELECTION PAGE
   margin-bottom: 15px;
 }
 
-/* Responsive seat grid — prevents overflow */
 .seat-grid {
   margin-top: 20px;
   display: grid;
@@ -52,7 +48,6 @@ SEAT SELECTION PAGE
   border: 2px solid #333;
 }
 
-/* Confirm Button */
 .confirm-btn {
   margin-top: 20px;
   padding: 12px 20px;
@@ -64,9 +59,6 @@ SEAT SELECTION PAGE
   color: #213d77;
 }
 
-/* -------------------------
-MEDIA QUERIES
----------------------------- */
 @media (max-width: 600px) {
   .seat-grid {
     grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));

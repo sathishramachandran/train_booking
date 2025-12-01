@@ -25,7 +25,7 @@ export default function Contact() {
             <strong>Email:</strong> sathishramu1999@gmail.com,
             sankeerthan2005@gmail.com
           </p>
-          <br></br>
+
           <p>Expected Response Time: 24–48 hours</p>
         </div>
 

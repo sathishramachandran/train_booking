@@ -5,7 +5,6 @@ import "./TrainShowcase.css";
 export default function TrainShowcase({ trains }) {
   const navigate = useNavigate();
 
-  // Compute a list of unique stations from trains (for From/To dropdowns)
   const stations = useMemo(() => {
     const set = new Set();
     trains.forEach((t) => {
@@ -15,8 +14,6 @@ export default function TrainShowcase({ trains }) {
     return Array.from(set);
   }, [trains]);
 
-  // Each card manages its own local dropdown state
-  // We'll store selected values in an object keyed by train.id
   const [selections, setSelections] = useState(() => {
     const init = {};
     trains.forEach((t) => {
@@ -38,14 +35,11 @@ export default function TrainShowcase({ trains }) {
 
   const handleProceed = (train) => {
     const sel = selections[train.id] || {};
-    // Basic validation
     if (!sel.from || !sel.to || !sel.date) {
       alert("Please choose From, To and Date.");
       return;
     }
 
-    // Navigate to seat selection — pass train + selected date in state
-    // SeatSelection expects train by id from dummyTrains, but we pass date in state
     navigate(`/train/${train.id}/seats`, { state: { date: sel.date } });
   };
 
@@ -79,7 +73,6 @@ export default function TrainShowcase({ trains }) {
                     `Experience a comfortable journey on ${train.name}. Enjoy punctual service, clean coaches, and safe travel.`}
                 </p>
 
-                {/* Inline dropdowns — per card */}
                 <div className="card-dropdowns">
                   <div className="form-group small">
                     <label>From</label>

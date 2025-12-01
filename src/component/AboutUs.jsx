@@ -4,7 +4,6 @@ import "./AboutUs.css";
 export default function AboutUs() {
   return (
     <div className="about-container">
-      {/* INTRO */}
       <section className="about-section intro">
         <h2>About Our Train Ticket Booking System</h2>
         <p>
@@ -15,7 +14,6 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* FEATURES */}
       <section className="about-section features">
         <h3>Key Features</h3>
         <ul>
@@ -28,7 +26,6 @@ export default function AboutUs() {
         </ul>
       </section>
 
-      {/* MISSION */}
       <section className="about-section mission">
         <h3>Our Mission</h3>
         <p>
@@ -39,7 +36,6 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* VISION */}
       <section className="about-section vision">
         <h3>Our Vision</h3>
         <p>
@@ -48,7 +44,6 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* HOW IT WORKS */}
       <section className="about-section flow">
         <h3>How It Works</h3>
         <div className="steps-grid">
@@ -59,7 +54,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
       <section className="about-section choose">
         <h3>Why Choose Us?</h3>
         <ul>
@@ -71,7 +65,6 @@ export default function AboutUs() {
         </ul>
       </section>
 
-      {/* SAFETY */}
       <section className="about-section safety">
         <h3>Safety & Security</h3>
         <p>
@@ -81,7 +74,6 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* TEAM */}
       <section className="about-section team">
         <h3>Our Team</h3>
         <p>
@@ -95,7 +87,6 @@ export default function AboutUs() {
         </p>
       </section>
 
-      {/* CONTACT */}
       <section className="about-section contact">
         <h3>Need Help?</h3>
         <p>

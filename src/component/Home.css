@@ -1,22 +1,17 @@
-/* ---------- QUICK GLOBAL FIXES (paste into index.css) ---------- */
-
-/* make sure box-sizing everywhere */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* block any accidental horizontal scroll */
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden !important; /* temporary safeguard */
+  overflow-x: hidden !important;
   width: 100%;
 }
 
-/* make media (images/videos) never overflow */
 img,
 video {
   max-width: 100%;
@@ -24,7 +19,6 @@ video {
   display: block;
 }
 
-/* ensure main content containers respect padding */
 .container,
 .nav-container,
 .home-container,
@@ -38,7 +32,6 @@ video {
   margin-right: auto;
 }
 
-/* header/nav guard (common overflow source) */
 .irctc-header .nav-container {
   width: 100%;
   max-width: 1200px;
@@ -47,7 +40,6 @@ video {
   margin: 0 auto;
 }
 
-/* grid children should wrap and not force overflow */
 .search-box,
 .seat-grid,
 .seat-container,
@@ -56,7 +48,6 @@ video {
   overflow: visible;
 }
 
-/* small-screen final safety */
 @media (max-width: 480px) {
   body {
     -webkit-overflow-scrolling: touch;
@@ -99,7 +90,6 @@ video {
   margin-bottom: 20px;
 }
 
-/* Responsive grid — no overflow */
 .search-box {
   background: white;
   padding: 25px;
@@ -111,9 +101,6 @@ video {
   gap: 20px;
 }
 
-/* -------------------------
-FORM FIELDS
----------------------------- */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -130,9 +117,6 @@ FORM FIELDS
   border: 1px solid #d1d9e6;
 }
 
-/* -------------------------
-SEARCH BUTTON
----------------------------- */
 .search-btn {
   grid-column: span 3;
   padding: 12px;
@@ -143,7 +127,6 @@ SEARCH BUTTON
   cursor: pointer;
   font-weight: 700;
 }
-/* ---------------- TOP TRAINS SECTION ---------------- */
 .top-trains-section {
   width: 90%;
   margin: 40px auto;
@@ -198,9 +181,6 @@ SEARCH BUTTON
   margin: 4px 0;
 }
 
-/* -------------------------
-MEDIA QUERIES (RESPONSIVE)
----------------------------- */
 @media (max-width: 900px) {
   .search-box {
     grid-template-columns: repeat(2, 1fr);

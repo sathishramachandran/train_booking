@@ -4,10 +4,8 @@ import "./HelpSupport.css";
 export default function HelpSupport() {
   return (
     <div className="help-container">
-      {/* MAIN TITLE */}
       <h2 className="help-title">Help & Support</h2>
 
-      {/* QUICK SUPPORT BOXES */}
       <div className="help-box-grid">
         <div className="help-box">
           <h3>📩 General Queries</h3>
@@ -41,7 +39,6 @@ export default function HelpSupport() {
         </div>
       </div>
 
-      {/* FAQ SECTION */}
       <div className="faq-section">
         <h3>Frequently Asked Questions (FAQ)</h3>
 
@@ -83,7 +80,6 @@ export default function HelpSupport() {
         </div>
       </div>
 
-      {/* CONTACT SECTION */}
       <div className="contact-support">
         <h3>Contact Support</h3>
         <p>

@@ -1,6 +1,3 @@
-/* -------------------------
-TRAIN LIST PAGE
----------------------------- */
 .train-list-container {
   width: 100%;
   max-width: 1200px;
@@ -72,9 +69,6 @@ TRAIN LIST PAGE
   cursor: pointer;
 }
 
-/* -------------------------
-MEDIA QUERY
----------------------------- */
 @media (max-width: 600px) {
   .seat {
     width: 32px;
