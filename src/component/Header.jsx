@@ -13,11 +13,11 @@ export default function Header() {
         <div className="nav-container">
           <div className="logo-section">
             <img
-<<<<<<< HEAD
+
               src="./train_logo.webp"
-=======
-              src="/src/assets/train1_logo.png"
->>>>>>> c2226444f178872b2d44daea1b44bd8d28db1ea4
+
+              // src="/src/assets/train1_logo.png"
+
               alt="IRCTC Logo"
               className="irctc-logo"
             />
