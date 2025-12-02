@@ -8,7 +8,7 @@ export default function HelpSupport() {
         {/* LEFT ILLUSTRATION */}
         <div className="help-left">
           <img
-            src="https://cdni.iconscout.com/illustration/premium/thumb/support-girl-helping-customer-illustration-download-in-svg-png-gif-file-formats--service-call-centre-illustrations-5120576.png?f=webp"
+            src="https://www.shutterstock.com/shutterstock/photos/2544341689/display_1500/stock-vector-need-help-text-in-an-yellow-dialog-bubble-with-a-megaphone-2544341689.jpg"
             alt="Support Illustration"
           />
         </div>
