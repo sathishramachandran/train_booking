@@ -26,6 +26,7 @@ const Merged = ({ searchState, setSearchState }) => {
 
   return (
     <div className="home-page">
+      {/* NAVBAR */}
       <header className="navbar">
         <div className="logo">Train</div>
 
@@ -53,6 +54,7 @@ const Merged = ({ searchState, setSearchState }) => {
         </div>
       </header>
 
+      {/* MOBILE MENU */}
       {menuOpen && (
         <div className="mobile-menu">
           <a href="#">Home</a>
@@ -72,12 +74,14 @@ const Merged = ({ searchState, setSearchState }) => {
         </div>
       )}
 
+      {/* HERO VIDEO + SEARCH */}
       <div className="video-hero">
         <video autoPlay loop muted playsInline className="bg-video">
           <source src={TrainVideo} type="video/mp4" />
         </video>
 
         <div className="search-box-overlay">
+          {/* FROM */}
           <select
             className="search-input"
             value={searchState.from}
@@ -93,6 +97,7 @@ const Merged = ({ searchState, setSearchState }) => {
             ))}
           </select>
 
+          {/* TO */}
           <select
             className="search-input"
             value={searchState.to}
@@ -108,6 +113,7 @@ const Merged = ({ searchState, setSearchState }) => {
             ))}
           </select>
 
+          {/* DATE */}
           <input
             type="date"
             className="search-input"
@@ -123,6 +129,7 @@ const Merged = ({ searchState, setSearchState }) => {
         </div>
       </div>
 
+      {/* ---------------- SEARCH RESULTS SECTION ---------------- */}
       <div className="available" style={{ width: "90%", margin: "40px auto" }}>
         {filteredTrain.length > 0 ? (
           <div>

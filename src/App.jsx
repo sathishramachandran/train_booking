@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./component/Header";
@@ -13,6 +13,7 @@ import AboutUs from "./component/AboutUs";
 import HelpSupport from "./component/HelpSupport";
 import Contact from "./component/Contact";
 
+/* ------------------ DUMMY TRAIN DATA ------------------ */
 const dummyTrains = [
   {
     id: 1,
@@ -27,7 +28,6 @@ const dummyTrains = [
     bookedSeats: [6, 7, 8, 9, 10],
     availableDates: ["2025-11-28", "2025-11-29", "2025-11-30"],
   },
-
   {
     id: 2,
     name: "Bangalore Mail",
@@ -41,7 +41,6 @@ const dummyTrains = [
     bookedSeats: [5, 6, 7, 8, 9],
     availableDates: ["2025-11-29", "2025-11-30"],
   },
-
   {
     id: 3,
     name: "Hyderabad Special",
@@ -55,7 +54,6 @@ const dummyTrains = [
     bookedSeats: [7, 8, 9],
     availableDates: ["2025-11-28", "2025-11-30"],
   },
-
   {
     id: 4,
     name: "Chennai - Hyderabad SF",
@@ -70,7 +68,6 @@ const dummyTrains = [
     bookedSeats: [6, 7, 8],
     availableDates: ["2025-11-28", "2025-11-29"],
   },
-
   {
     id: 5,
     name: "Bangalore - Hyderabad Express",
@@ -87,6 +84,7 @@ const dummyTrains = [
   },
 ];
 
+/* ------------------ APP ROUTES ------------------ */
 function App() {
   return (
     <BrowserRouter>
