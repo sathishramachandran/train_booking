@@ -137,7 +137,7 @@ export default function BookingForm() {
 
         <div className="fare-card">
           <h3>Total Fare</h3>
-          <p>₹250 × {seats.length}</p>
+          <p>₹250 x {seats.length}</p>
           <h4>₹{seats.length * 250}</h4>
         </div>
       </div>

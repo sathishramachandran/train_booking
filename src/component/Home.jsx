@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import vid from "../assets/trainviedo.mp4"
 
 export default function Home({ trains }) {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ export default function Home({ trains }) {
       {/* ---------------- VIDEO SECTION ---------------- */}
       <div className="video-wrapper">
         <video autoPlay muted loop className="hero-video">
-          <source src="/src/assets/trainviedo.mp4" type="video/mp4" />
+          <source src={vid} type="video/mp4" />
         </video>
       </div>
 
