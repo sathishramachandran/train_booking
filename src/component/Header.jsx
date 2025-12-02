@@ -14,9 +14,9 @@ export default function Header() {
           <div className="logo-section">
             <img
 
-              src="./src/assets/train_logo.webp"
+              src="./src/assets/train1_logo.png"
 
-              // src="/train1_logo.png"
+              // src="/"
 
               alt="IRCTC Logo"
               className="irctc-logo"
