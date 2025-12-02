@@ -23,7 +23,7 @@ video {
 .gallery-section {
   width: 90%;
   margin: 40px auto;
-  font-family: Poppins;
+  font-family: sans-serif;
 }
 
 .gallery-title {
@@ -204,7 +204,7 @@ video {
 .top-trains-section {
   width: 90%;
   margin: 40px auto;
-  font-family: Poppins;
+  font-family: sans-serif;
 }
 
 .top-trains-title {
