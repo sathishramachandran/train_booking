@@ -14,11 +14,11 @@ export default function Header() {
           <div className="logo-section">
             <img
 
-              src="./src/assets/train1_logo.png"
+              src="../src/assets/train1_logo.png"
 
-              // src="/"
+       
 
-              alt="IRCTC Logo"
+              alt="Logo"
               className="irctc-logo"
             />
             <h2 className="app-title">Train Ticket Booking</h2>
